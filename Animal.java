@@ -1,22 +1,24 @@
-import java.util.Scanner;
 
 public abstract class Animal {
   private int id;
   private String nome;
-  private String idade; 
-  private int peso;
+  private int idade; 
+  private double peso;
   private String alimento;
+  Mamifero mamifero;
+  Ave ave;
   ;
   
-  public Animal(int id, String nome, String idade, int peso ){
+  public Animal(int id, String nome, int idade, double peso ){
     this.id = id;
     this. nome = nome;
     this.idade = idade;
     this.peso = peso;
     this.alimento = "";
+    
   }
 
-  public String getIdade() {
+  public int getIdade() {
     return idade;
 }
 
@@ -28,7 +30,7 @@ public abstract class Animal {
     return nome;
 }
 
-  public int getPeso() {
+  public double getPeso() {
     return peso;
 }
 
@@ -40,7 +42,7 @@ public abstract class Animal {
       this.nome = nome;
   }
 
-  public void setidade(String idade) {
+  public void setidade(int idade) {
       this.idade = idade;
   }
 

@@ -2,7 +2,7 @@ public class Leao extends Mamifero{
 
     private int vacinas;
   
-    public Leao(int id, String nome, String idade, int peso, String qtdDePelos, int vacinas){
+    public Leao(int id, String nome, int idade, double peso, int qtdDePelos, int vacinas){
       super(id, nome, idade, peso, qtdDePelos);
       this.vacinas = vacinas;
     }

@@ -1,17 +1,15 @@
-public class Lobo extends Mamifero{
+public class Lobo extends Mamifero {
     private boolean ehAlpha;
-  
-    public Lobo(int id, String nome, String idade, int peso, int pelos,boolean ehAlpha, String qtdDePelos) {
-      super( id, nome, idade, peso, qtdDePelos);
+
+    public Lobo(int id, String nome, int idade, int peso, boolean ehAlpha, int qtdDePelos) {
+        super(id, nome, idade, peso, qtdDePelos);
         this.ehAlpha = ehAlpha;
     }
 
-    public boolean getEhAlpha() {
+    public boolean isEhAlpha() {
         return ehAlpha;
     }
 
-    
-   
     public void familiaBiologica() {
         System.out.println("Família: Canidae");
     }
@@ -22,4 +20,3 @@ public class Lobo extends Mamifero{
         setAlimento("carne e frutas");
     }
 }
-
