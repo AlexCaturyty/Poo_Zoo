@@ -10,5 +10,8 @@ public  class Pato extends Ave{
       return corPenas;
     }
   
+    public void familia() {
+      System.out.println("Família: Anatidae");
+  }
     
   }

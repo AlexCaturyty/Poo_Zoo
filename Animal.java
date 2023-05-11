@@ -5,6 +5,7 @@ public abstract class Animal {
   private int idade; 
   private double peso;
   private String alimento;
+  
   Mamifero mamifero;
   Ave ave;
   ;
@@ -70,5 +71,6 @@ public abstract class Animal {
     this.peso -= 2;
   }
 
+  public abstract void familia();
   
 }

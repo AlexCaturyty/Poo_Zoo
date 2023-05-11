@@ -1,4 +1,4 @@
-public class Ave extends Animal{
+public abstract class Ave extends Animal{
     double envergadura;
     boolean voa;
    

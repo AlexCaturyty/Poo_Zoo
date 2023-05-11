@@ -10,7 +10,7 @@ public class Lobo extends Mamifero {
         return ehAlpha;
     }
 
-    public void familiaBiologica() {
+    public void familia() {
         System.out.println("Família: Canidae");
     }
 

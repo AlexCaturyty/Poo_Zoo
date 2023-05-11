@@ -21,4 +21,8 @@ public class Aguia extends Ave{
       public boolean ehVoador() {
           return true;
       }
+
+      public void familia() {
+        System.out.println("Família: Accipitridae");
+    }
   }

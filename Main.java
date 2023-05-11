@@ -72,6 +72,7 @@ public abstract class Main {
       vacinas = scanner.nextInt();
 
       Leao leao = new Leao(id, nome, idade, peso, qtdDePelos, vacinas);
+      leao.familia();
       animais.add(leao);
       System.out.println("Leão adicionado com sucesso!");
     }if (opcao == 2) {
@@ -86,6 +87,7 @@ public abstract class Main {
     scanner.nextLine(); 
 
     Lobo lobo = new Lobo(id, nome, idade, opcao, ehAlpha, qtdDePelos);
+    lobo.familia();
     animais.add(lobo);
     System.out.println("Lobo adicionado com sucesso!");
 
@@ -101,6 +103,7 @@ public abstract class Main {
       corDasPenas = scanner.nextLine();
 
       Pato pato = new Pato(id, nome, idade, opcao, envergadura, voa = false, corDasPenas);
+      pato.familia();
       animais.add(pato);
       System.out.println("Pato adicionado com sucesso!");
     } else if (opcao == 4) {
@@ -113,7 +116,8 @@ public abstract class Main {
       scanner.nextLine(); 
 
       Aguia aguia = new Aguia(id, nome, idade, opcao, voa = true, envergadura, false);
-      aguia.setVoa(true); // Definir a águia como animal
+      aguia.familia();
+      aguia.setVoa(true); 
       animais.add(aguia);
       System.out.println("Águia adicionada com sucesso!");
     } else {
